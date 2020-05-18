@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Read</title>
+  </head>
+  <body>
+    <h2>All Persons</h2>
+    <a href="/">Home Page</a> <br><br>
+
+    <table>
+      <tr>
+        <th>Name</th> <th>Age</th> <th>Subject</th> <th>Action</th>
+      </tr>
+
+      <% for(var i = 0; i< people.length;i++) { %>
+          <tr>
+         <td>  <%= people[i].name  %></td> <td><%= people[i].age %></td> <td> <%= people[i].subject %> </td> <td><a href="/person?id=<%=people[i]._id%>">Edit</a>/<a href="/delete?id=<%=people[i]._id%>">Delete</a></td>
+         </tr>
+      <% } %>
+
+
+    </table>
+  </body>
+</html>

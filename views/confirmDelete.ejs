@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Confirm Delete</title>
+  </head>
+  <body>
+    <h2>Confirm?</h2>
+    <h4>Are you sure want to delete  <%= person.name %>?</h4><br>
+    <a href="/confirmDelete?id=<%= person.id %>">Yes</a>
+    <a href="/read">No</a>
+    <%# <form action="/confirmDelete" method="post">
+        <input type="submit" name="yes" value="Yes">
+    </form>
+    <form action="/read" method="post">
+        <input type="submit" name="no" value="No">
+    </form> %>
+  </body>
+</html>
